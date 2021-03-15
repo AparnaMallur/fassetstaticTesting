@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Fasset</display-name>
+
+	<servlet>
+		<servlet-name>SpringController</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+      		/WEB-INF/beansfordispatcherServletContext.xml
+      		<!-- /WEB-INF/servlet-quartz.xml -->
+      		</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SpringController</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>FassetFilter</filter-name>
+		<filter-class>com.fasset.filters.CommonFilter</filter-class>
+		<init-param>
+			<param-name>avoid-urls</param-name>
+			<param-value>
+	        	//WEB-INF/views/home-landing.jsp,/,/login,/xyz,/LOGOUTMobile,/MOBILELOGIN,/MobileHOME,/logout,/changePWD,/forgotPasswd,/signedUp,/subscribe,/proceedNext,/ccavRequestHandler,/ccavResponseHandler,/loginDetails,/loginDetailscompanyAll,/loginDetailscompany,/changePassword
+        	</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>deviceResolverRequestFilter</filter-name>
+		<filter-class>org.springframework.mobile.device.DeviceResolverRequestFilter</filter-class>
+	</filter>
+
+
+	<filter-mapping>
+		<filter-name>FassetFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>deviceResolverRequestFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- <context-param> <param-name>contextConfigLocation</param-name> <param-value>/WEB-INF/servlet-quartz.xml</param-value> 
+		</context-param> -->
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+    /WEB-INF/beansforApplication(root)Context.xml
+    </param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- <listener> <listener-class>com.fasset.filters.CommonListner</listener-class> 
+		</listener> -->
+
+	<session-config>
+		<session-timeout>55</session-timeout>
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/views/home-landing.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>

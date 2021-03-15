@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+     http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+ 
+	<!-- specifing class and method that is going to be called on a specified time basis -->
+	<bean id="myJob"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="myTask" />
+		<property name="targetMethod" value="doTask" />
+	</bean>
+ 
+	<!-- cronExpression-->
+	<bean id="simpleTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="myJob" />
+		<property name="cronExpression" value="0 0/3 * * * ?" /> <!-- run every 1hr -->
+	</bean>
+	
+	<!-- scheduler factory bean to bind,the executing code and time intervals together -->
+ 	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+ 		<!-- <property name="autoStartup">
+			<value>false</value>
+		</property> -->
+		<property name="jobDetails">
+			<list>
+				<ref bean="myJob" />
+			</list>
+		</property>
+		<property name="triggers">
+			<list>
+				<ref bean="simpleTrigger" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="myTask" class="com.fasset.scheduled.Exceptionscheduler" />
+ 
+</beans>

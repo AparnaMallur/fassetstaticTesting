@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReportTravel" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="82a91740-a3a6-4537-81b6-64b7a81e50b4">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="40869699-e6dd-4212-a9b3-446ef34a3b2b"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\git\\myls\\src\\com\\fasset\\jasper_reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="nqst" class="java.lang.String"/>
+	<parameter name="part" class="java.lang.String"/>
+	<parameter name="npag" class="java.lang.String"/>
+	<field name="from_date" class="java.lang.String"/>
+	<field name="to_date" class="java.lang.String"/>
+	<field name="abbl_city" class="java.lang.String"/>
+	<field name="abbl_stat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="115">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="55" width="555" height="60" forecolor="#333333" backcolor="#CCCCCC" uuid="ccd9d754-b201-416c-a545-ada81dac0ef1"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<staticText>
+					<reportElement x="401" y="0" width="147" height="60" forecolor="#333333" uuid="b6ee3d83-278d-44ca-bb6d-6e0446526374"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[              State]]></text>
+				</staticText>
+			</frame>
+			<textField>
+				<reportElement x="93" y="0" width="462" height="20" uuid="1b8f919d-2816-45ba-8427-ce58a90b5e7e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{part}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="58" height="30" forecolor="#333333" uuid="1de666b7-57d3-4b9c-aee2-8cc073c1ef70"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Question #:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="38" height="20" forecolor="#333333" uuid="ef35855f-ccff-4c5a-8371-6cb296840840"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page #:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="58" y="20" width="497" height="30" uuid="cf4e67b0-72c4-4b4d-9b7e-4aafc3e179a0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nqst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="38" y="0" width="20" height="20" uuid="25ae354c-ed36-4e9f-9260-e41fa3d2ff0a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{npag}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="58" y="0" width="35" height="20" forecolor="#333333" uuid="8cf57aa0-cf76-45a0-b84f-db5fcce07fc1"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Part #:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="55" width="107" height="60" forecolor="#333333" uuid="c7af93d9-e582-4826-a0ea-5ac02bb18a29"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date you left the United States (mm/dd/yyyy)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="55" width="147" height="60" forecolor="#333333" uuid="46bfad8f-8944-452f-8407-2e5bb3e752bd"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date you returned to the United States (mm/dd/yyyy)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="254" y="55" width="147" height="60" forecolor="#333333" uuid="9d74d0bf-b4cd-4ef8-9425-124e8f6852dc"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[             City]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="107" height="20" uuid="2e3e22f0-73ea-43f6-881f-f69e5573710a"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{from_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="107" y="0" width="147" height="20" uuid="455ca2d4-a500-4004-b083-50085e76eda3"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{to_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="0" width="147" height="20" uuid="d0aa0f4f-d1a9-4d77-a4ff-2e33db4c163b"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{abbl_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="0" width="154" height="20" uuid="1deb1c55-b0b7-46ed-8b70-4e0f5b7a6339"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{abbl_stat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

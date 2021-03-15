@@ -1,0 +1,51 @@
+PurchaseEntryPdfView.(class) = com.fasset.pdf.PDFBuilderForPurchaseEntry
+SalesEntryPdfView.(class) = com.fasset.pdf.PDFBuilderForSalesEntry
+BillsPayablePdfView.(class) = com.fasset.pdf.PDFBuilderForBillsPayable
+BillsReceivablePdfView.(class) = com.fasset.pdf.PDFBuilderForBillsReceivable
+PaymentReportPdfView.(class) = com.fasset.pdf.PDFBuilderForPaymentReport
+ReceiptReportPdfView.(class) = com.fasset.pdf.PDFBuilderForReceiptReport
+CreditNoteRegisterPdfView.(class) = com.fasset.pdf.PDFBuilderForCreditNoteRegister
+DebitNoteRegisterPdfView.(class) = com.fasset.pdf.PDFBuilderForDebitNoteRegister
+
+StockSummaryPdfView.(class) = com.fasset.pdf.PDFBuilderForStockSummary
+TrailBalancePdfView.(class) = com.fasset.pdf.PDFBuilderForTrailBalance
+CashFlowSummaryPdfView.(class) = com.fasset.pdf.PDFBuilderForCashFlowSummary
+VerticalProfitAndLossPdfView.(class) = com.fasset.pdf.PDFBuilderForVerticalProfitAndLoss
+HorizontalProfitAndLossPdfView.(class) = com.fasset.pdf.PDFBuilderForHorizontalProfitAndLoss
+
+IncomeAndExpediturePdfView.(class) = com.fasset.pdf.PDFBuilderForIncomeAndExpenditure
+
+VerticalBalanceSheetReportPdfView.(class) = com.fasset.pdf.PDFBuilderForVerticalBalanceSheet
+HorizontalBalanceSheetReportPdfView.(class) = com.fasset.pdf.PDFBuilderForHorizontalBalanceSheet
+
+ReceiptPdfView.(class) = com.fasset.pdf.PDFBuilderForReceipt
+SalesPdfView.(class) = com.fasset.pdf.PDFBuilderForSales
+CreditNotePdfView.(class) = com.fasset.pdf.PDFBuilderForCreditNote
+DebitNotePdfView.(class) = com.fasset.pdf.PDFBuilderForDebitNote
+PaymentPdfView.(class) = com.fasset.pdf.PDFBuilderForPayment
+PurchasePdfView.(class) = com.fasset.pdf.PDFBuilderForPurchase
+QuotationPdf.(class) = com.fasset.pdf.PDFBuilderForQuotation
+ContraPdfView.(class) = com.fasset.pdf.PDFBuilderForContra
+PayrollAutoJVPdfView(class)=com.fasset.pdf.PDFBuilderForPayrollAutoJV
+
+GSTReport1ExcelView.(class) = com.fasset.excel.GSTReport1ExcelBuilder
+GSTReport2ExcelView.(class) = com.fasset.excel.GSTReport2ExcelBuilder
+OpeningBalancesExcelView.(class) = com.fasset.excel.OpeningBalancesExcelViewBuilder
+DayBookPdfView.(class) = com.fasset.pdf.PDFBuilderForDayBook
+CashBookBankBookPdfView.(class) = com.fasset.pdf.PDFBuilderForCashBookBankBook
+
+LedgerReportPdfView.(class) = com.fasset.pdf.PDFBuilderForLedgerReport
+LedgerReportPdfViewAgainstCustomer.(class) = com.fasset.pdf.PDFBuilderForLedgerReportAgainstCustomer
+LedgerReportPdfViewAgainstSupplier.(class) = com.fasset.pdf.PDFBuilderForLedgerReportAgainstSupplier
+LedgerReportPdfViewAgainstBank.(class) = com.fasset.pdf.PDFBuilderForLedgerReportAgainstBank
+
+SalesAccountingVoucherPdfView.(class) = com.fasset.pdf.PDFBuilderForSalesAccountingVoucher
+PurchaseAccountingVoucherPdfView.(class) = com.fasset.pdf.PDFBuilderForPurchaseAccountingVoucher
+ReceiptAccountingVoucherPdfView.(class) = com.fasset.pdf.PDFBuilderForReceiptAccountingVoucher
+PaymentAccountingVoucherPdfView.(class) = com.fasset.pdf.PDFBuilderForPaymentAccountingVoucher
+ContraAccountingVoucherPdfView.(class) = com.fasset.pdf.PDFBuilderForContraAccountingVoucher
+
+
+
+
+

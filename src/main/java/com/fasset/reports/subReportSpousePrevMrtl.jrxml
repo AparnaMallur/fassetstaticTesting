@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReportSpousePrevMrtl" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="82a91740-a3a6-4537-81b6-64b7a81e50b4">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="40869699-e6dd-4212-a9b3-446ef34a3b2b"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\git\\myls\\src\\com\\fasset\\jasper_reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="npag" class="java.lang.String"/>
+	<parameter name="part" class="java.lang.String"/>
+	<parameter name="nqst" class="java.lang.String"/>
+	<field name="frst_name" class="java.lang.String"/>
+	<field name="last_name" class="java.lang.String"/>
+	<field name="midl_name" class="java.lang.String"/>
+	<field name="stat" class="java.lang.String"/>
+	<field name="stat_text" class="java.lang.String"/>
+	<field name="date_born" class="java.lang.String"/>
+	<field name="ccty" class="java.lang.String"/>
+	<field name="selec_nati" class="java.lang.String"/>
+	<field name="date_mast" class="java.lang.String"/>
+	<field name="date_maed" class="java.lang.String"/>
+	<field name="type_marg" class="java.lang.String"/>
+	<field name="type_marg_text" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="45">
+			<staticText>
+				<reportElement x="0" y="0" width="38" height="20" forecolor="#333333" uuid="01f5723d-ceb2-4a4e-88d4-2df130ef3e8a"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page #:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="38" y="0" width="20" height="20" uuid="8bcc7fc3-9aa4-4678-bc19-593c18311051"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{npag}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="58" y="0" width="35" height="20" forecolor="#333333" uuid="7612522b-2b8e-4cda-8eb5-263e63b31578"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Part #:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="93" y="0" width="462" height="20" uuid="fdbb9ebc-6ae0-4721-8ad5-39120c366f94"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{part}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="58" height="20" forecolor="#333333" uuid="e0ae801a-6229-43be-b4c4-35a99b4e8306"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Question #:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="58" y="20" width="497" height="20" uuid="229c489d-cc8c-479a-a68b-05fd6f770f66"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nqst}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="140" splitType="Stretch">
+			<textField>
+				<reportElement x="195" y="100" width="360" height="20" uuid="8982971c-1d78-47ea-a9b9-a6e131882432"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{type_marg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="417" height="20" uuid="a1297690-57cd-422d-93a2-9ab2445106bd"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{last_name} + " " + $F{frst_name} + " " + $F{midl_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="40" width="151" height="20" uuid="2103d6aa-9b44-4fd7-81f0-8ff38ba4e728"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{date_born}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="40" width="264" height="20" uuid="95139e3c-13c0-459e-a47a-e55b8c57202c"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Prior Spouse's Country of Birth: " + $F{ccty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="466" y="80" width="89" height="20" uuid="a6bfddec-e02b-4540-99c0-b323f34144fc"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{date_maed}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="175" y="80" width="116" height="20" uuid="f1ccf6fa-3951-4d0c-86c4-e9d3b5f48d94"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{date_mast}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="60" width="302" height="20" uuid="399bf909-da7e-4596-9178-d7ce4a268037"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{selec_nati}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="20" width="385" height="20" uuid="17c078eb-ace3-470b-ad13-14ba8bf57a7d"/>
+				<box leftPadding="2">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{stat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="140" height="20" uuid="e59f5112-082a-46a2-9eee-fbc2ea408532"/>
+				<box leftPadding="1">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prior Spouse's Family Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="170" height="20" uuid="7971e848-00bb-4e4a-8d91-2bf58a97c5cb"/>
+				<box leftPadding="1">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prior Spouse's Immigration Status: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="140" height="20" uuid="71dba883-ab10-4a4c-9bc5-cff126049292"/>
+				<box leftPadding="1">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prior Spouse's Date of Birth: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="253" height="20" uuid="988ef44a-a469-4635-9555-85e3bb419a38"/>
+				<box leftPadding="1">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prior Spouse's Country of Citizenship or Nationality:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="175" height="20" uuid="db550c03-a06f-48ae-9771-fae4bd2c013c"/>
+				<box leftPadding="1">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Marriage with Prior Spouse:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="195" height="20" uuid="412afb92-3a3e-4093-a821-c85aecb400c8"/>
+				<box leftPadding="1">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[How Marriage Ended with Prior Spouse: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="80" width="175" height="20" uuid="e54770c6-d2c2-48c6-b42b-21c7824f20f3"/>
+				<box leftPadding="1">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Marriage with Prior Spouse: ]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

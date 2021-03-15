@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReportOtherNames" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="82a91740-a3a6-4537-81b6-64b7a81e50b4">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="40869699-e6dd-4212-a9b3-446ef34a3b2b"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\git\\myls\\src\\com\\fasset\\jasper_reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="part" class="java.lang.String"/>
+	<parameter name="nqst" class="java.lang.String"/>
+	<parameter name="npag" class="java.lang.String"/>
+	<field name="resi_stna" class="java.lang.String"/>
+	<field name="resi_city" class="java.lang.String"/>
+	<field name="resi_stes" class="java.lang.String"/>
+	<field name="resi_nusc" class="java.lang.String"/>
+	<field name="usfr_mnth" class="java.lang.String"/>
+	<field name="usfr_year" class="java.lang.String"/>
+	<field name="usto_mnth" class="java.lang.String"/>
+	<field name="usto_year" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="100">
+			<frame>
+				<reportElement mode="Opaque" x="2" y="50" width="555" height="50" forecolor="#333333" backcolor="#CCCCCC" uuid="ccd9d754-b201-416c-a545-ada81dac0ef1"/>
+				<staticText>
+					<reportElement x="93" y="0" width="68" height="50" forecolor="#333333" uuid="9895ce40-2721-42b3-9345-d0a984e456bf"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[City]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="0" width="93" height="50" forecolor="#333333" uuid="8572600f-8933-4abc-8cf6-ae1d07f091bf"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Street Name and Number]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="434" y="0" width="119" height="24" forecolor="#333333" uuid="b899020b-9a66-4575-9111-a5f82b4a9622"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[To]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="161" y="0" width="74" height="50" forecolor="#333333" uuid="62f831bb-57de-409b-bf9f-7f8358636c98"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Province or State]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="311" y="0" width="123" height="24" forecolor="#333333" uuid="9d78c22a-afbb-4629-9f12-db1e8597e2dc"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[From]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="311" y="24" width="123" height="26" forecolor="#333333" uuid="3d5a7f85-41a4-4905-acb4-b63cb42fa259"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Month        Year]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="434" y="24" width="119" height="26" forecolor="#333333" uuid="185c49ce-3c4e-4341-93e2-66a75540fd7f"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Month     Year]]></text>
+				</staticText>
+			</frame>
+			<textField>
+				<reportElement x="38" y="0" width="20" height="20" uuid="3b4d8a61-1113-41f6-9e2c-c597ca09b67b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{npag}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="38" height="20" forecolor="#333333" uuid="d729d985-24b7-43cb-a1a4-ad458aa62da5"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page #:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="0" width="35" height="20" forecolor="#333333" uuid="9a680aa1-fc94-4c0d-b4c7-1d12e795a7fd"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Part #:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="93" y="0" width="462" height="20" uuid="8cd464cf-1849-4c07-9594-d91356d3b6e7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{part}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="237" y="50" width="76" height="50" forecolor="#333333" uuid="e014e147-b17b-4e90-87aa-d776fbfa47da"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Country]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField fassettretchWithOverflow="true">
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="2" y="0" width="93" height="36" isPrintInFirstWholeBand="true" uuid="2e3e22f0-73ea-43f6-881f-f69e5573710a"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{resi_stna}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="95" y="0" width="68" height="36" uuid="455ca2d4-a500-4004-b083-50085e76eda3"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false" fassettrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{resi_city}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="237" y="0" width="76" height="36" uuid="1902fced-2242-4894-9005-67fbeb02c350"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{resi_nusc}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="436" y="0" width="59" height="36" uuid="9dc996f3-2c99-4ddf-9e3a-8d3a938393bd"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usto_mnth}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="163" y="0" width="74" height="36" uuid="ab9310ea-a950-4ac4-bd6c-4fdd90e3db08"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false" fassettrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{resi_stes}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="313" y="0" width="69" height="36" uuid="e18f9613-4258-4d8d-8f2e-e81be44c5dbf"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usfr_mnth}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="382" y="0" width="54" height="36" uuid="d5cac0a2-733d-4852-84fc-f71a145c6590"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usfr_year}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="495" y="0" width="60" height="36" uuid="84089b20-5361-494f-a71a-ccd946764751"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usto_year}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

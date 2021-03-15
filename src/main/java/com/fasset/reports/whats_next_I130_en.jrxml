@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="whats_next_I90_en" pageWidth="595" pageHeight="842" columnWidth="509" leftMargin="43" rightMargin="43" topMargin="43" bottomMargin="43" uuid="99f7186f-ea66-421b-86e9-ca8f02d0ad1b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="5172"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\IVONETA\\Documents\\GEHI\\Immigration Selfie\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="imgPath" class="java.lang.String">
+		<defaultValueExpression><![CDATA["C:\\Users\\Eduardo Urra\\Desktop\\enviado\\reports\\re\\"]]></defaultValueExpression>
+	</parameter>
+	<field name="fullName" class="java.lang.String"/>
+	<field name="orderNumber" class="java.lang.String"/>
+	<field name="completedBy" class="java.lang.String"/>
+	<field name="dateCompleted" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Stretch">
+			<textField>
+				<reportElement x="475" y="4" width="18" height="20" forecolor="#414142" uuid="76f12ef9-cda0-49ec-82e9-fd5712870b5e"/>
+				<textElement>
+					<font  size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="134" y="17" width="217" height="83" uuid="008b9270-47eb-4efa-8e00-e678f63f4995"/>
+				<imageExpression><![CDATA[$P{imgPath} + "logo-52-04.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="433" y="4" width="42" height="20" forecolor="#414142" uuid="9200645a-df21-46d8-8aa0-0257bc3b1dc6"/>
+				<textElement>
+					<font  size="16"/>
+				</textElement>
+				<text><![CDATA[Page]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50">
+			<printWhenExpression><![CDATA[new Boolean($V{PAGE_NUMBER}.intValue()!=1)]]></printWhenExpression>
+			<image>
+				<reportElement x="1" y="0" width="159" height="50" uuid="c0770b50-9c2d-4ad3-bc65-06ef92601cb9"/>
+				<imageExpression><![CDATA[$P{imgPath} + "logo-lil.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="475" y="13" width="18" height="20" forecolor="#414142" uuid="f0ba2386-e6b4-47c6-9247-21b0a441d0fa"/>
+				<textElement>
+					<font  size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="433" y="13" width="42" height="20" forecolor="#414142" uuid="3a8ddbcd-9ebe-4057-9aa4-1d9f6ee558a9"/>
+				<textElement>
+					<font  size="16"/>
+				</textElement>
+				<text><![CDATA[Page]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="599" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="123" width="509" height="209" uuid="816cd5d4-cac9-4814-8bec-dcea69df75fe"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineColor="#00539B"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="160" y="123" width="166" height="30" forecolor="#00539B" uuid="f7a25b5b-f5a8-462f-9d27-fe402fe32d44"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Need Help?]]></text>
+			</staticText>
+			<line>
+				<reportElement x="253" y="170" width="1" height="149" forecolor="#00539B" uuid="ec1287c5-545d-4332-b0f1-8b7ba703c355"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="243" width="252" height="30" forecolor="#00539B" uuid="21c49760-9b1b-4408-8355-29571d289aa4"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Go to our help center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="254" y="273" width="255" height="31" forecolor="#00853B" uuid="506ec99a-9275-47f4-a602-48cb5b4034fc"/>
+				<textElement textAlignment="Center">
+					<font  size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1-800-555-5555]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="26" width="42" height="20" forecolor="#414142" uuid="30aa1749-bdf8-4e0f-9dac-ea1cb9e8ab9f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Dear]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="46" y="26" width="100" height="20" forecolor="#414142" uuid="6a56d2ae-2e69-4c47-9bae-e70c8ea4c272"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fullName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="254" y="244" width="255" height="29" forecolor="#00539B" uuid="f1e93067-b06a-44b1-93e2-c5a35c6f15ce"/>
+				<textElement textAlignment="Center">
+					<font  size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Call]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="273" width="253" height="32" forecolor="#00539B" uuid="535ec5cb-1547-48f3-8c14-aab7afdea916"/>
+				<textElement textAlignment="Center">
+					<font  size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[http://www.immigrationselfie.com/help]]></text>
+			</staticText>
+			<image>
+				<reportElement x="351" y="186" width="52" height="52" uuid="c8ebc231-b3fd-4079-8b29-b0b5f7b5fc6d"/>
+				<imageExpression><![CDATA[$P{imgPath} + "icon-phone.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="102" y="186" width="52" height="52" uuid="d550598c-25dd-4eab-bbcc-56c2d96ac704"/>
+				<imageExpression><![CDATA[$P{imgPath} + "icon-call.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="1" y="372" width="189" height="30" forecolor="#00539B" uuid="860798a8-cef1-4eee-ac19-d2501d1068c4"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order Summary]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1" y="427" width="508" height="146" uuid="e1cc5e36-cb11-43b6-89c9-4cf4fd3e10ac"/>
+				<graphicElement>
+					<pen lineColor="#00539B"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="16" y="439" width="69" height="28" forecolor="#414142" uuid="3c6d5489-56c5-4e42-8e77-f2767875ee77"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order #:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="487" width="111" height="28" forecolor="#414142" uuid="8c187ef8-71b6-4a31-8cf0-73c5d64d4210"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Completed by:     ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="534" width="123" height="28" forecolor="#414142" uuid="1a648b60-6aad-43e0-880c-4bc69b4b0679"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Completed:       ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="85" y="439" width="414" height="28" forecolor="#414142" uuid="25077d35-7a59-4236-b0a6-7d2313f7f896"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orderNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="487" width="380" height="28" forecolor="#414142" uuid="9160dd72-9627-4da6-b507-3273e3593642"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{completedBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="534" width="365" height="28" forecolor="#414142" uuid="df7b0c30-3ac5-4444-b660-837cf0802b4e"/>
+				<textElement>
+					<font  size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dateCompleted}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="16" y="476" width="483" height="1" forecolor="#00539B" uuid="6c15988b-2e45-41db-9238-97a1d4507fa6"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="16" y="522" width="483" height="1" forecolor="#00539B" uuid="7eae2a9a-9e82-4cb9-b76a-ac400df9cc53"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<break>
+				<reportElement x="0" y="587" width="100" height="1" uuid="af1efc8c-dc5d-405d-8981-8634dc4203d4"/>
+			</break>
+		</band>
+		<band height="706" splitType="Immediate">
+			<break>
+				<reportElement x="0" y="701" width="100" height="1" uuid="eed1196a-aef9-4055-a448-9052696d065f"/>
+			</break>
+		</band>
+		<band height="478">
+			<break>
+				<reportElement x="0" y="360" width="100" height="1" uuid="291f6e77-740a-47ce-b4c1-b9d789d1e41b"/>
+			</break>
+		</band>
+		<band height="706">
+			<break>
+				<reportElement x="0" y="695" width="100" height="1" uuid="c3ec5bbc-3a24-4c54-8cc8-e33ee618f3ef"/>
+			</break>
+			<break>
+				<reportElement x="0" y="183" width="100" height="1" uuid="c5069b49-8157-452d-ae16-fdb1708f6c67"/>
+			</break>
+			<break>
+				<reportElement x="0" y="252" width="100" height="1" uuid="0931b86b-1ac9-4179-9fdf-eb8b01a8dabf"/>
+			</break>
+		</band>
+		<band height="586"/>
+		<band height="552"/>
+		<band height="447">
+			<break>
+				<reportElement x="0" y="175" width="100" height="1" uuid="c1e9ccda-cf35-4ac7-b0a0-9e8bd82d6c3d"/>
+			</break>
+		</band>
+		<band height="659"/>
+	</detail>
+</jasperReport>

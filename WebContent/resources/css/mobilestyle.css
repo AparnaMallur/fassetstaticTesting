@@ -1,0 +1,12 @@
+.bg-login{
+	background-image: url(../images/login-backg.jpg) !important;
+	/* background-size: cover;
+	background-position: center;
+    position: fixed; */
+     background-size: 100% 100%;
+    background-repeat: no-repeat;
+ 
+ 
+}
+
+html{height:450px !important;}

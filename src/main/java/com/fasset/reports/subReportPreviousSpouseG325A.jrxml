@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReportOtherNames" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="82a91740-a3a6-4537-81b6-64b7a81e50b4">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="40869699-e6dd-4212-a9b3-446ef34a3b2b"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\git\\myls\\src\\com\\fasset\\jasper_reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="part" class="java.lang.String"/>
+	<parameter name="nqst" class="java.lang.String"/>
+	<parameter name="npag" class="java.lang.String"/>
+	<field name="last_name" class="java.lang.String"/>
+	<field name="frst_name" class="java.lang.String"/>
+	<field name="date_born" class="java.lang.String"/>
+	<field name="date_mast" class="java.lang.String"/>
+	<field name="date_maed" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="100">
+			<frame>
+				<reportElement mode="Opaque" x="2" y="50" width="555" height="50" forecolor="#333333" backcolor="#CCCCCC" uuid="ccd9d754-b201-416c-a545-ada81dac0ef1"/>
+				<staticText>
+					<reportElement x="93" y="0" width="103" height="50" forecolor="#333333" uuid="9895ce40-2721-42b3-9345-d0a984e456bf"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[First Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="424" y="0" width="129" height="50" forecolor="#333333" uuid="b899020b-9a66-4575-9111-a5f82b4a9622"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Date and Place of Termination of
+Marriage]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="196" y="0" width="96" height="50" forecolor="#333333" uuid="62f831bb-57de-409b-bf9f-7f8358636c98"/>
+					<box>
+						<pen lineWidth="0.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Date Of Birth]]></text>
+				</staticText>
+			</frame>
+			<textField>
+				<reportElement x="38" y="0" width="20" height="20" uuid="3b4d8a61-1113-41f6-9e2c-c597ca09b67b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{npag}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="38" height="20" forecolor="#333333" uuid="d729d985-24b7-43cb-a1a4-ad458aa62da5"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Page #:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="0" width="35" height="20" forecolor="#333333" uuid="9a680aa1-fc94-4c0d-b4c7-1d12e795a7fd"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Part #:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="93" y="0" width="462" height="20" uuid="8cd464cf-1849-4c07-9594-d91356d3b6e7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{part}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="294" y="50" width="132" height="50" forecolor="#333333" uuid="e014e147-b17b-4e90-87aa-d776fbfa47da"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date and Place of Marriage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="50" width="91" height="50" forecolor="#333333" uuid="8572600f-8933-4abc-8cf6-ae1d07f091bf"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Former Husbands or Wives (If none, so state)
+Family Name (For wife, give maiden name)]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField fassettretchWithOverflow="true">
+				<reportElement stretchType="RelativeToTallestObject" x="2" y="0" width="95" height="34" uuid="2e3e22f0-73ea-43f6-881f-f69e5573710a"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{last_name}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement mode="Transparent" x="95" y="0" width="103" height="34" uuid="455ca2d4-a500-4004-b083-50085e76eda3"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false" fassettrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{frst_name}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="294" y="0" width="132" height="34" uuid="1902fced-2242-4894-9005-67fbeb02c350"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date_mast}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="426" y="0" width="129" height="34" uuid="9dc996f3-2c99-4ddf-9e3a-8d3a938393bd"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date_maed}]]></textFieldExpression>
+			</textField>
+			<textField fassettretchWithOverflow="true">
+				<reportElement x="198" y="0" width="96" height="34" uuid="ab9310ea-a950-4ac4-bd6c-4fdd90e3db08"/>
+				<box leftPadding="5">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false" fassettrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date_born}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
